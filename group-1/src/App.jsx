@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navabr from './components/Navabr'
 import Home from './pages/Home';
+import Sidebar from './components/Sidebar';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,9 +19,12 @@ function App() {
   <Navabr/>
  </header>
 
- <main>
+ <main className='flex'>
   <section>
     <Outlet/>
+  </section>
+  <section>
+    <Sidebar/>
   </section>
   <section>
     <Home/>
